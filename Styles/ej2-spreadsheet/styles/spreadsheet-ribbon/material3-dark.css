@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,900&display=swap");
+:root {
+  --color-sf-black: 0, 0, 0;
+  --color-sf-white: 255, 255, 255;
+  --color-sf-primary: 208, 188, 255;
+  --color-sf-primary-container: 79, 55, 139;
+  --color-sf-secondary: 204, 194, 220;
+  --color-sf-secondary-container: 74, 68, 88;
+  --color-sf-tertiary: 239, 184, 200;
+  --color-sf-tertiary-container: 99, 59, 72;
+  --color-sf-surface: 28, 27, 31;
+  --color-sf-surface-variant: 73, 69, 79;
+  --color-sf-background: var(--color-sf-surface);
+  --color-sf-on-primary: 55, 30, 115;
+  --color-sf-on-primary-container: 234, 221, 255;
+  --color-sf-on-secondary: 51, 45, 65;
+  --color-sf-on-secondary-container: 232, 222, 248;
+  --color-sf-on-tertiary: 73, 37, 50;
+  --color-sf-on-tertiary-containe: 255, 216, 228;
+  --color-sf-on-surface: 230, 225, 229;
+  --color-sf-on-surface-variant: 202, 196, 208;
+  --color-sf-on-background: 230, 225, 229;
+  --color-sf-outline: 147, 143, 153;
+  --color-sf-outline-variant: 68, 71, 70;
+  --color-sf-shadow: 0, 0, 0;
+  --color-sf-surface-tint-color: 208, 188, 255;
+  --color-sf-inverse-surface: 230, 225, 229;
+  --color-sf-inverse-on-surface: 49, 48, 51;
+  --color-sf-inverse-primary: 103, 80, 164;
+  --color-sf-scrim: 0, 0, 0;
+  --color-sf-error: 242, 184, 181;
+  --color-sf-error-container: 140, 29, 24;
+  --color-sf-on-error: 96, 20, 16;
+  --color-sf-on-error-container: 249, 222, 220;
+  --color-sf-success: 83, 202, 23;
+  --color-sf-success-container: 22, 62, 2;
+  --color-sf-on-success: 13, 39, 0;
+  --color-sf-on-success-container: 183, 250, 150;
+  --color-sf-info: 71, 172, 251;
+  --color-sf-info-container: 0, 67, 120;
+  --color-sf-on-info: 0, 51, 91;
+  --color-sf-on-info-container: 173, 219, 255;
+  --color-sf-warning: 245, 180, 130;
+  --color-sf-warning-container: 123, 65, 0;
+  --color-sf-on-warning: 99, 52, 0;
+  --color-sf-on-warning-container: 255, 220, 193;
+  --color-sf-spreadsheet-gridline: 231, 224, 236;
+  --color-sf-shadow-focus-ring1: 0 0 0 1px #000000, 0 0 0 3px #ffffff;
+  --color-sf-success-text: 0, 0, 0;
+  --color-sf-warning-text: 0, 0, 0;
+  --color-sf-info-text: 0, 0, 0;
+  --color-sf-danger-text: 0, 0, 0;
+  --color-sf-diagram-palette-background: var(--color-sf-inverse-surface);
+  --color-sf-content-text-color-alt2: var(--color-sf-on-secondary);
+}
+
+.e-spreadsheet .e-ribbon .e-drop-icon::before {
+  content: "\e729";
+}
+.e-spreadsheet .e-ribbon .e-menu-wrapper.e-file-menu ul .e-menu-item .e-caret::before {
+  content: "\e729";
+}
+
+.e-spreadsheet .e-ribbon {
+  border: 1px solid rgba(var(--color-sf-outline-variant));
+  position: relative;
+}
+.e-spreadsheet .e-ribbon .e-tab .e-hscroll .e-scroll-nav {
+  min-height: 40px;
+}
+.e-spreadsheet .e-ribbon .e-tab .e-content .e-toolbar {
+  border-left-width: 0;
+  border-right-width: 0;
+  min-height: 40px;
+}
+.e-spreadsheet .e-ribbon .e-tab .e-content .e-toolbar .e-toolbar-items .e-toolbar-item .e-split-btn-wrapper {
+  box-shadow: none;
+}
+.e-spreadsheet .e-ribbon .e-tab .e-tab-header .e-hscroll {
+  display: inline-block !important; /* stylelint-disable-line declaration-no-important */
+  width: calc(100% - 28px);
+}
+.e-spreadsheet .e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item:nth-child(2) .e-tab-wrap {
+  padding-left: 0;
+  padding-right: 0;
+}
+.e-spreadsheet .e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item:nth-child(2) .e-text-wrap {
+  vertical-align: top;
+}
+.e-spreadsheet .e-ribbon .e-tab .e-tab-header .e-indicator {
+  z-index: 1;
+}
+.e-spreadsheet .e-ribbon .e-tab .e-tab-header .e-toolbar-items .e-toolbar-item.e-hide {
+  display: none;
+}
+.e-spreadsheet .e-ribbon .e-tab .e-tab-header .e-toolbar-item {
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.e-spreadsheet .e-ribbon .e-tab .e-tab-header .e-toolbar-item .e-tab-text {
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+}
+.e-spreadsheet .e-ribbon .e-tab.e-sheet-tab .e-tab-header .e-tab-text {
+  white-space: pre;
+}
+.e-spreadsheet .e-ribbon .e-drop-icon {
+  cursor: pointer;
+  font-family: "e-icons";
+  margin: 12px 6px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  transform: rotate(180deg);
+  transition: transform 300ms ease;
+  width: 18px;
+  font-size: 14px;
+}
+.e-spreadsheet .e-ribbon .e-drop-icon.e-disabled {
+  cursor: default;
+  pointer-events: none;
+}
+.e-spreadsheet .e-ribbon.e-collapsed .e-content, .e-spreadsheet .e-ribbon.e-collapsed .e-indicator, .e-spreadsheet .e-ribbon.e-collapsed .e-tab-header .e-toolbar-item.e-active .e-text-wrap::before {
+  display: none;
+}
+.e-spreadsheet .e-ribbon.e-collapsed .e-drop-icon {
+  transform: rotate(0deg);
+}
+.e-spreadsheet .e-ribbon .e-content .e-toolbar .e-toolbar-items {
+  display: inline-block;
+}
+.e-spreadsheet .e-ribbon .e-content .e-toolbar.e-overlay .e-toolbar-items .e-toolbar-item.e-overlay {
+  opacity: 1;
+}
+.e-spreadsheet .e-ribbon .e-menu-wrapper {
+  border-width: 0;
+}
+.e-spreadsheet .e-ribbon .e-menu-wrapper.e-file-menu.e-scrollable .e-menu {
+  overflow: hidden;
+}
+.e-spreadsheet .e-ribbon .e-menu-wrapper ul.e-menu {
+  padding: 0;
+}
+.e-spreadsheet .e-ribbon .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon {
+  border-radius: 4px;
+  font-weight: 500;
+}
+.e-spreadsheet .e-ribbon .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon.e-selected {
+  background-color: rgba(var(--color-sf-primary));
+  color: rgba(var(--color-sf-on-primary));
+}
+.e-spreadsheet .e-ribbon .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon.e-selected .e-caret {
+  color: rgba(var(--color-sf-on-primary));
+  font-weight: 500;
+}
+.e-spreadsheet .e-ribbon .e-menu-wrapper ul .e-menu-item.e-menu-caret-icon .e-caret {
+  font-size: 16px;
+}
+
+.e-bigger .e-spreadsheet .e-ribbon .e-menu-wrapper.e-file-menu ul.e-menu,
+.e-bigger.e-spreadsheet .e-ribbon .e-menu-wrapper.e-file-menu ul.e-menu {
+  padding: 0;
+  font-size: 14px;
+}
+.e-bigger .e-spreadsheet .e-ribbon .e-menu-wrapper.e-file-menu ul.e-menu .e-menu-item.e-menu-caret-icon .e-caret,
+.e-bigger.e-spreadsheet .e-ribbon .e-menu-wrapper.e-file-menu ul.e-menu .e-menu-item.e-menu-caret-icon .e-caret {
+  line-height: 41px;
+}
+.e-bigger .e-spreadsheet .e-ribbon .e-drop-icon,
+.e-bigger.e-spreadsheet .e-ribbon .e-drop-icon {
+  font-size: 14px;
+  margin: 16px 5px;
+}
+
+.e-spreadsheet .e-ribbon {
+  background-color: linear-gradient(0deg, rgba(var(--color-sf-primary), 0.05), rgba(var(--color-sf-primary), 0.05)), rgba(var(--color-sf-surface));
+}
+.e-spreadsheet .e-ribbon .e-tab .e-tab-header {
+  background: linear-gradient(0deg, rgba(var(--color-sf-primary), 0.08), rgba(var(--color-sf-primary), 0.08)), rgba(var(--color-sf-surface));
+}
+.e-spreadsheet .e-ribbon .e-drop-icon {
+  color: rgba(var(--color-sf-on-surface-variant));
+}
+.e-spreadsheet .e-ribbon .e-tab .e-content .e-toolbar {
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+}
+.e-spreadsheet .e-ribbon .e-menu-wrapper {
+  background-color: transparent;
+}
+.e-spreadsheet .e-ribbon .e-tab .e-tab-header .e-toolbar-item.e-menu-tab:hover, .e-spreadsheet .e-ribbon .e-tab.e-focused .e-tab-header .e-toolbar-item.e-menu-tab:hover {
+  background: transparent;
+}

@@ -4,7 +4,7 @@
     <!--<router-outlet></router-outlet>-->
     <!--<app-counter-component></app-counter-component>-->
 
-    <ejs-spreadsheet>
+    <ejs-spreadsheet #spreadsheet (created)="onCreate()" openUrl ="https://services.syncfusion.com/angular/production/api/spreadsheet/open">
 
 
     </ejs-spreadsheet>
